@@ -1,0 +1,63 @@
+.react-calendar {
+    width: 100%;
+    max-width: 900px; /* Perbesar lebar maksimal */
+    background-color: #1e293b; /* Warna latar belakang */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #3b82f6;
+    padding: 30px; /* Perbesar padding untuk tampilan lebih lega */
+}
+
+  
+  .react-calendar__tile {
+    background: none;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .react-calendar__tile:enabled:hover {
+    background-color: #2563eb; /* Warna hover */
+    color: #fff;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+  }
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol navigasi */
+    margin-bottom: 1rem; /* Tambahkan jarak ke bawah jika diperlukan */
+}
+
+  .react-calendar__navigation button {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .react-calendar__navigation button:disabled {
+    color: #6b7280; /* Warna tombol nonaktif */
+    cursor: not-allowed;
+  }
+  
+  .react-calendar__month-view__weekdays {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #94a3b8; /* Warna nama hari */
+    text-align: center;
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: #fca5a5; /* Warna akhir pekan */
+  }
+  
